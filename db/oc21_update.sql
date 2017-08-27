@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 24, 2017 at 07:46 PM
+-- Generation Time: Aug 27, 2017 at 05:23 PM
 -- Server version: 5.7.19-0ubuntu0.16.04.1
 -- PHP Version: 7.0.22-0ubuntu0.16.04.1
 
@@ -1042,9 +1042,10 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.77980000, 1, '2017-08-24 11:53:33'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2017-08-24 11:55:43'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.84670001, 1, '2017-08-24 11:53:33');
+(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.77600002, 0, '2017-08-27 14:31:05'),
+(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2017-08-27 14:31:31'),
+(3, 'Euro', 'EUR', '', '€', '2', 0.83819997, 0, '2017-08-27 14:30:57'),
+(4, 'BDT', 'BDT', '৳', '', '2', 1.00000000, 1, '2017-08-27 11:02:14');
 
 -- --------------------------------------------------------
 
@@ -1604,15 +1605,16 @@ INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `positi
 (20, 5, '0', 'column_left', 2),
 (69, 10, 'affiliate', 'column_right', 1),
 (68, 6, 'account', 'column_right', 1),
-(102, 1, 'html.35', 'content_top', 5),
-(101, 1, 'html.32', 'content_top', 2),
-(100, 1, 'featured.28', 'content_top', 2),
+(117, 1, 'html.35', 'content_top', 5),
+(116, 1, 'html.32', 'content_top', 2),
 (72, 3, 'category', 'column_left', 1),
 (73, 3, 'banner.30', 'column_left', 2),
-(98, 1, 'carousel.29', 'content_top', 6),
-(99, 1, 'slideshow.27', 'content_top', 1),
-(97, 1, 'html.33', 'content_top', 3),
-(96, 1, 'html.34', 'content_top', 4);
+(115, 1, 'slideshow.27', 'content_top', 1),
+(114, 1, 'carousel.29', 'content_top', 7),
+(113, 1, 'featured.28', 'content_top', 2),
+(112, 1, 'html.33', 'content_top', 3),
+(111, 1, 'html.34', 'content_top', 4),
+(118, 1, 'html.36', 'content_top', 6);
 
 -- --------------------------------------------------------
 
@@ -1635,7 +1637,7 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 (38, 6, 0, 'account/%'),
 (17, 10, 0, 'affiliate/%'),
 (44, 3, 0, 'product/category'),
-(58, 1, 0, 'common/home'),
+(60, 1, 0, 'common/home'),
 (20, 2, 0, 'product/product'),
 (24, 11, 0, 'information/information'),
 (23, 7, 0, 'checkout/%'),
@@ -1813,7 +1815,8 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (32, 'New Arrival', 'html', '{"name":"New Arrival","module_description":{"1":{"title":"New Arrival","description":"&lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-md-6&quot;&gt; &lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/modern-indian-saree-500x500.jpg&quot;&gt;\\r\\n&lt;div class=&quot;opt-cap&quot;&gt;\\r\\n&lt;h5&gt;Product title&lt;\\/h5&gt;\\r\\n&lt;a href=&quot;#&quot; class=&quot;opt buy-link-btn&quot;&gt;Buy Now&lt;\\/a&gt;\\r\\n&lt;\\/div&gt;&lt;\\/div&gt;\\r\\n\\r\\n  &lt;div class=&quot;col-md-6&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/indian-anarkali-fashionable-pakistani-salwar-kameez-suit-des-500x500.jpg&quot;&gt;\\r\\n&lt;div class=&quot;opt-cap&quot;&gt;\\r\\n&lt;h5&gt;Product title&lt;\\/h5&gt; \\r\\n&lt;a href=&quot;#&quot; class=&quot;opt buy-link-btn&quot;&gt;Buy Now&lt;\\/a&gt;\\r\\n&lt;\\/div&gt;&lt;\\/div&gt;\\r\\n\\r\\n&lt;\\/div&gt;"}},"status":"1"}'),
 (33, 'Weekly new addition', 'html', '{"name":"Weekly new addition","module_description":{"1":{"title":"This week\'s new additions","description":"&lt;div class=&quot;row&quot;&gt;  &lt;div class=&quot;col-md-4&quot;&gt;    &lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/indian-salwar-kameez-500x500 (2).jpg&quot;&gt; &lt;div class=&quot;opt-cap&quot;&gt;&lt;h5&gt;Product title&lt;\\/h5&gt;&lt;a href=&quot;#&quot; class=&quot;opt buy-link-btn&quot;&gt;Buy Now&lt;\\/a&gt;&lt;\\/div&gt;&lt;\\/div&gt;  &lt;div class=&quot;col-md-4&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/indian-salwar-kameez-500x500 (1).jpg&quot;&gt;&lt;div class=&quot;opt-cap&quot;&gt;&lt;h5&gt;Product title&lt;\\/h5&gt;&lt;a href=&quot;#&quot; class=&quot;opt buy-link-btn&quot;&gt;Buy Now&lt;\\/a&gt;&lt;\\/div&gt;&lt;\\/div&gt;  &lt;div class=&quot;col-md-4&quot;&gt; &lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/indian-salwar-kameez-500x500 (3).jpg&quot;&gt;&lt;div class=&quot;opt-cap&quot;&gt;&lt;h5&gt;Product title&lt;\\/h5&gt;&lt;a href=&quot;#&quot; class=&quot;opt buy-link-btn&quot;&gt;Buy Now&lt;\\/a&gt;&lt;\\/div&gt;&lt;\\/div&gt;&lt;\\/div&gt;"}},"status":"1"}'),
 (34, 'Ads', 'html', '{"name":"Ads","module_description":{"1":{"title":"","description":"&lt;br&gt;&lt;br&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-md-12&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/4_web_banner_1111915X270-01.jpg&quot;&gt;\\r\\n\\r\\n&lt;div class=&quot;opt-caption&quot;&gt;\\r\\n&lt;h4&gt;Saree\'s in action&lt;\\/h4&gt;\\r\\n&lt;\\/div&gt;\\r\\n\\r\\n&lt;\\/div&gt;\\r\\n\\r\\n&lt;\\/div&gt;\\r\\n&lt;br&gt;&lt;br&gt;"}},"status":"1"}'),
-(35, 'Kongkabotee Dairy', 'html', '{"name":"Kongkabotee Dairy","module_description":{"1":{"title":"Kongkabotee Dairy","description":"&lt;div class=&quot;row&quot;&gt;  &lt;div class=&quot;col-md-4&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/modern-indian-saree-500x500.jpg&quot;&gt;&lt;div class=&quot;opt-cap&quot;&gt;&lt;h5&gt;Product title&lt;\\/h5&gt;&lt;\\/div&gt;&lt;\\/div&gt;  &lt;div class=&quot;col-md-4&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/054d4d7545038b6a9488915fe640b016--indian-salwar-kameez-anarkali-suits.jpg&quot;&gt;&lt;div class=&quot;opt-cap&quot;&gt;&lt;h5&gt;Product title&lt;\\/h5&gt;&lt;\\/div&gt;&lt;\\/div&gt;  &lt;div class=&quot;col-md-4&quot;&gt; &lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/afacfe9123c25eee0f3cf57339a68974--red-pants-red-color.jpg&quot;&gt;&lt;div class=&quot;opt-cap&quot;&gt;&lt;h5&gt;Product title&lt;\\/h5&gt;&lt;\\/div&gt;&lt;\\/div&gt;&lt;\\/div&gt;"}},"status":"1"}');
+(35, 'Kongkabotee Dairy', 'html', '{"name":"Kongkabotee Dairy","module_description":{"1":{"title":"Kongkabotee Dairy","description":"&lt;div class=&quot;row&quot;&gt;  &lt;div class=&quot;col-md-4&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/modern-indian-saree-500x500.jpg&quot;&gt;&lt;div class=&quot;opt-cap&quot;&gt;&lt;h5&gt;Product title&lt;\\/h5&gt;\\r\\n&lt;\\/div&gt;\\r\\n&lt;\\/div&gt;\\r\\n  &lt;div class=&quot;col-md-4&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/054d4d7545038b6a9488915fe640b016--indian-salwar-kameez-anarkali-suits.jpg&quot;&gt;&lt;div class=&quot;opt-cap&quot;&gt;&lt;h5&gt;Product title&lt;\\/h5&gt;\\r\\n&lt;\\/div&gt;\\r\\n&lt;\\/div&gt;\\r\\n  &lt;div class=&quot;col-md-4&quot;&gt; &lt;img width=&quot;100%&quot; src=&quot;http:\\/\\/localhost\\/oc21\\/upload\\/image\\/catalog\\/afacfe9123c25eee0f3cf57339a68974--red-pants-red-color.jpg&quot;&gt;&lt;div class=&quot;opt-cap&quot;&gt;&lt;h5&gt;Product title&lt;\\/h5&gt;\\r\\n&lt;\\/div&gt;\\r\\n&lt;\\/div&gt;\\r\\n&lt;\\/div&gt;\\r\\n&lt;br&gt;\\r\\n&lt;br&gt;"}},"status":"1"}'),
+(36, 'Why shop with us', 'html', '{"name":"Why shop with us","module_description":{"1":{"title":"Why shop with us","description":"&lt;div class=&quot;row&quot;&gt;    &lt;div class=&quot;col-md-4&quot;&gt;        &lt;div class=&quot;wsw bdr-r&quot;&gt;            &lt;i class=&quot;fa fa-truck&quot;&gt;&lt;\\/i&gt;            &lt;h4&gt;Timed Delivery&lt;\\/h4&gt;            &lt;p&gt;By creating an account you will be able to shop faster, be up to date on an order\'s status, and keep track of the orders you have previously made.&lt;\\/p&gt;        &lt;\\/div&gt;    &lt;\\/div&gt;    &lt;div class=&quot;col-md-4&quot;&gt;        &lt;div class=&quot;wsw bdr-r&quot;&gt;            &lt;i class=&quot;fa fa-map-marker&quot; aria-hidden=&quot;true&quot;&gt;&lt;\\/i&gt;            &lt;h4&gt;All over Bangladesh&lt;\\/h4&gt;            &lt;p&gt;By creating an account you will be able to shop faster, be up to date on an order\'s status, and keep track of the orders you have previously made.&lt;\\/p&gt;        &lt;\\/div&gt;    &lt;\\/div&gt;    &lt;div class=&quot;col-md-4&quot;&gt;        &lt;div class=&quot;wsw&quot;&gt;            &lt;i class=&quot;fa fa-reply&quot; aria-hidden=&quot;true&quot;&gt;&lt;\\/i&gt;            &lt;h4&gt;Easy Return\'s&lt;\\/h4&gt;            &lt;p&gt;By creating an account you will be able to shop faster, be up to date on an order\'s status, and keep track of the orders you have previously made.&lt;\\/p&gt;        &lt;\\/div&gt;    &lt;\\/div&gt;&lt;\\/div&gt;"}},"status":"1"}');
 
 -- --------------------------------------------------------
 
@@ -2239,12 +2242,12 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (30, 'Product 3', '', '', '', '', '', '', '', 7, 6, 'catalog/demo/canon_eos_5d_1.jpg', 9, 1, '100.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 16:59:00', '2011-09-30 01:05:23'),
 (31, 'Product 4', '', '', '', '', '', '', '', 1000, 6, 'catalog/demo/nikon_d300_1.jpg', 0, 1, '80.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 3, 1, 1, 0, 1, 0, '2009-02-03 17:00:10', '2011-09-30 01:06:00'),
 (32, 'Product 5', '', '', '', '', '', '', '', 999, 6, 'catalog/demo/ipod_touch_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 17:07:26', '2011-09-30 01:07:22'),
-(33, 'Product 6', '', '', '', '', '', '', '', 1000, 6, 'catalog/demo/samsung_syncmaster_941bw.jpg', 0, 1, '200.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 17:08:31', '2011-09-30 01:06:29'),
+(33, 'Product 6', '', '', '', '', '', '', '', 1000, 6, 'catalog/demo/samsung_syncmaster_941bw.jpg', 0, 1, '200.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 5, '2009-02-03 17:08:31', '2011-09-30 01:06:29'),
 (34, 'Product 7', '', '', '', '', '', '', '', 1000, 6, 'catalog/demo/ipod_shuffle_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 18:07:54', '2011-09-30 01:07:17'),
 (35, 'Product 8', '', '', '', '', '', '', '', 1000, 5, '', 0, 0, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 18:08:31', '2011-09-30 01:06:17'),
 (36, 'Product 9', '', '', '', '', '', '', '', 994, 6, 'catalog/demo/ipod_nano_1.jpg', 8, 0, '100.0000', 100, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 18:09:19', '2011-09-30 01:07:12'),
 (40, 'product 11', '', '', '', '', '', '', '', 970, 5, 'catalog/demo/iphone_1.jpg', 8, 1, '101.0000', 0, 9, '2009-02-03', '10.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 21:07:12', '2011-09-30 01:06:53'),
-(41, 'Product 14', '', '', '', '', '', '', '', 977, 5, 'catalog/demo/imac_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 21:07:26', '2011-09-30 01:06:44'),
+(41, 'Product 14', '', '', '', '', '', '', '', 977, 5, 'catalog/demo/imac_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 1, '2009-02-03 21:07:26', '2011-09-30 01:06:44'),
 (42, 'Product 15', '', '', '', '', '', '', '', 990, 5, 'catalog/demo/apple_cinema_30.jpg', 8, 1, '100.0000', 400, 9, '2009-02-04', '12.50000000', 1, '1.00000000', '2.00000000', '3.00000000', 1, 1, 2, 0, 1, 0, '2009-02-03 21:07:37', '2011-09-30 00:46:19'),
 (43, 'Product 16', '', '', '', '', '', '', '', 929, 5, 'catalog/demo/macbook_1.jpg', 8, 0, '500.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:07:49', '2011-09-30 01:05:46'),
 (44, 'Product 17', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/macbook_air_1.jpg', 8, 1, '1000.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:00', '2011-09-30 01:05:53'),
@@ -2923,126 +2926,124 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (146, 0, 'category', 'category_status', '1', 0),
 (158, 0, 'account', 'account_status', '1', 0),
 (159, 0, 'affiliate', 'affiliate_status', '1', 0),
-(267, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
-(266, 0, 'config', 'config_shared', '0', 0),
-(265, 0, 'config', 'config_secure', '0', 0),
+(739, 0, 'config', 'config_compression', '0', 0),
+(740, 0, 'config', 'config_secure', '0', 0),
+(741, 0, 'config', 'config_password', '1', 0),
+(742, 0, 'config', 'config_shared', '0', 0),
+(743, 0, 'config', 'config_encryption', 'MVCKvy4fo8kbyV5jWTDO8anNZUu5Uiz4rO8BHIAy6yxGp0odj4B0GINHD8E7UQFvcbvo4d0QFV5th0LXtUq1fOUzuW9nxMe4jgwegEa4Gavyca1KW1Vpen39jvujGtMRfukNThBLzqe39LuTp1uPX2GvbaHW8P4WyhnnC2etWF7I8qhtr6lWgCjzyRGFLvdpsSrQYuJRGP3rE1YBjuOfiKs6KwYIwZDK2wsZ6BUPmSYERkrn4JYqCy9BPP0AkFjWpJ4FPyX067cmZwsGmNW916JTXpE1dX2SgnuFyNWwuLVM5D7d6wPWtIf1imde9krrsc89gkJ0xTcd625quHHWCsYRUiMzHmLA9QuO3k974Sobk38XBtBw4kU4DsQYFqGLcvjflhJyAdjabW3iPC28YBg1CrOdmlZ5cf8GpuYDUlj9OM71enH28vT4Ddl5LD6CS9SqbtQ81aZXR2nnSOjKqEfmyRvV1wSArQBHKXNMiRAd8dYRCeVGG0BD6ygmdZsi6ygJ0ILxRoWo1QKjZQEWL703FiFrz98V2FfofqqPnYVJpPwg6oTBPiCw9V4hLKkGUYmKfFCvI8lxhFjnUDSIV7U0OnL59bK3yYsgJcIIXKpHFVylM3aaF61I97AhtCDqJr1r2gWRlMgdxjIGmKhqd762r3LjR1YuaDgmAsphRkyoP8ojAYZznFD7Od3E9gSiVgQ6GLoyXBQUE6zPwYWA2is8XT8y7lRMeoWzaGOc3RYN7NmeupIqsYBtWyDgyGtUyVvSsHYYLREDEabPFGHPG446OTLn305tTU63FRBTV0HjyJrM5O8RTlUmDhj5Paew2DMQDqxTKqTZ0b0eFrUH6J1urEmyAZfLmr9JS250K3f9DmXbppo80c3f10jhvn1NgICYldgTGDoV4lNTgEByjE5OeExj7hjp3cFWSprfypNrltUZClxFUqyK68ynHmBG29IuzAiULSVvea4GckOjIfSnHQKsrpmVC7o61j3bgUoXdEJnsQ0Esqj2B7cu4t9c', 0),
+(744, 0, 'config', 'config_file_max_size', '300000', 0),
+(745, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
+(746, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
+(747, 0, 'config', 'config_error_display', '1', 0),
+(748, 0, 'config', 'config_error_log', '1', 0),
+(749, 0, 'config', 'config_error_filename', 'error.log', 0),
+(738, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
 (94, 0, 'voucher', 'voucher_sort_order', '8', 0),
 (95, 0, 'voucher', 'voucher_status', '1', 0),
-(261, 0, 'config', 'config_fraud_detection', '0', 0),
-(260, 0, 'config', 'config_mail_alert', '', 0),
 (103, 0, 'free_checkout', 'free_checkout_status', '1', 0),
 (104, 0, 'free_checkout', 'free_checkout_order_status_id', '1', 0),
-(258, 0, 'config', 'config_ftp_status', '0', 0),
-(257, 0, 'config', 'config_ftp_root', '', 0),
-(256, 0, 'config', 'config_ftp_password', '', 0),
-(255, 0, 'config', 'config_ftp_username', '', 0),
-(254, 0, 'config', 'config_ftp_port', '21', 0),
-(253, 0, 'config', 'config_ftp_hostname', '', 0),
-(252, 0, 'config', 'config_image_location_height', '50', 0),
-(251, 0, 'config', 'config_image_location_width', '268', 0),
-(250, 0, 'config', 'config_image_cart_height', '47', 0),
-(249, 0, 'config', 'config_image_cart_width', '47', 0),
-(248, 0, 'config', 'config_image_wishlist_height', '47', 0),
-(181, 0, 'config', 'config_meta_title', 'Your Store', 0),
-(182, 0, 'config', 'config_meta_description', 'My Store', 0),
-(183, 0, 'config', 'config_meta_keyword', '', 0),
-(184, 0, 'config', 'config_template', 'default', 0),
-(185, 0, 'config', 'config_layout_id', '4', 0),
-(186, 0, 'config', 'config_country_id', '222', 0),
-(187, 0, 'config', 'config_zone_id', '3563', 0),
-(188, 0, 'config', 'config_language', 'en', 0),
-(189, 0, 'config', 'config_admin_language', 'en', 0),
-(190, 0, 'config', 'config_currency', 'USD', 0),
-(191, 0, 'config', 'config_currency_auto', '1', 0),
-(192, 0, 'config', 'config_length_class_id', '1', 0),
-(193, 0, 'config', 'config_weight_class_id', '1', 0),
-(194, 0, 'config', 'config_product_count', '1', 0),
-(195, 0, 'config', 'config_product_limit', '15', 0),
-(196, 0, 'config', 'config_product_description_length', '100', 0),
-(197, 0, 'config', 'config_limit_admin', '20', 0),
-(198, 0, 'config', 'config_review_status', '1', 0),
-(199, 0, 'config', 'config_review_guest', '1', 0),
-(200, 0, 'config', 'config_review_mail', '0', 0),
-(201, 0, 'config', 'config_voucher_min', '1', 0),
-(202, 0, 'config', 'config_voucher_max', '1000', 0),
-(203, 0, 'config', 'config_tax', '1', 0),
-(204, 0, 'config', 'config_tax_default', 'shipping', 0),
-(205, 0, 'config', 'config_tax_customer', 'shipping', 0),
-(206, 0, 'config', 'config_customer_online', '0', 0),
-(207, 0, 'config', 'config_customer_group_id', '1', 0),
-(208, 0, 'config', 'config_customer_group_display', '["1"]', 1),
-(209, 0, 'config', 'config_customer_price', '0', 0),
-(210, 0, 'config', 'config_account_id', '3', 0),
-(211, 0, 'config', 'config_account_mail', '0', 0),
-(212, 0, 'config', 'config_invoice_prefix', 'INV-2013-00', 0),
-(293, 0, 'config', 'config_api_id', '1', 0),
-(214, 0, 'config', 'config_cart_weight', '1', 0),
-(215, 0, 'config', 'config_checkout_guest', '1', 0),
-(216, 0, 'config', 'config_checkout_id', '5', 0),
-(217, 0, 'config', 'config_order_status_id', '1', 0),
-(218, 0, 'config', 'config_processing_status', '["5","1","2","12","3"]', 1),
-(219, 0, 'config', 'config_complete_status', '["5","3"]', 1),
-(220, 0, 'config', 'config_order_mail', '0', 0),
-(221, 0, 'config', 'config_stock_display', '0', 0),
-(222, 0, 'config', 'config_stock_warning', '0', 0),
-(223, 0, 'config', 'config_stock_checkout', '0', 0),
-(224, 0, 'config', 'config_affiliate_approval', '0', 0),
-(225, 0, 'config', 'config_affiliate_auto', '0', 0),
-(226, 0, 'config', 'config_affiliate_commission', '5', 0),
-(227, 0, 'config', 'config_affiliate_id', '4', 0),
-(228, 0, 'config', 'config_affiliate_mail', '0', 0),
-(229, 0, 'config', 'config_return_id', '0', 0),
-(230, 0, 'config', 'config_return_status_id', '2', 0),
-(231, 0, 'config', 'config_logo', 'catalog/logo.png', 0),
-(232, 0, 'config', 'config_icon', 'catalog/cart.png', 0),
-(233, 0, 'config', 'config_image_category_width', '80', 0),
-(234, 0, 'config', 'config_image_category_height', '80', 0),
-(235, 0, 'config', 'config_image_thumb_width', '228', 0),
-(236, 0, 'config', 'config_image_thumb_height', '228', 0),
-(237, 0, 'config', 'config_image_popup_width', '500', 0),
-(238, 0, 'config', 'config_image_popup_height', '500', 0),
-(239, 0, 'config', 'config_image_product_width', '228', 0),
-(240, 0, 'config', 'config_image_product_height', '228', 0),
-(241, 0, 'config', 'config_image_additional_width', '74', 0),
-(242, 0, 'config', 'config_image_additional_height', '74', 0),
-(243, 0, 'config', 'config_image_related_width', '80', 0),
-(244, 0, 'config', 'config_image_related_height', '80', 0),
-(245, 0, 'config', 'config_image_compare_width', '90', 0),
-(246, 0, 'config', 'config_image_compare_height', '90', 0),
-(247, 0, 'config', 'config_image_wishlist_width', '47', 0),
-(180, 0, 'config', 'config_comment', '', 0),
-(179, 0, 'config', 'config_open', '', 0),
-(178, 0, 'config', 'config_image', '', 0),
-(177, 0, 'config', 'config_fax', '', 0),
-(176, 0, 'config', 'config_telephone', '123456789', 0),
-(290, 0, 'config', 'config_email', 'ausantemonir@gmail.com', 0),
-(174, 0, 'config', 'config_geocode', '', 0),
-(172, 0, 'config', 'config_owner', 'Your Name', 0),
-(173, 0, 'config', 'config_address', 'Address 1', 0),
-(171, 0, 'config', 'config_name', 'Your Store', 0),
-(268, 0, 'config', 'config_seo_url', '0', 0),
-(269, 0, 'config', 'config_file_max_size', '300000', 0),
-(270, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
-(271, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
-(272, 0, 'config', 'config_maintenance', '0', 0),
-(273, 0, 'config', 'config_password', '1', 0),
-(292, 0, 'config', 'config_encryption', 'MVCKvy4fo8kbyV5jWTDO8anNZUu5Uiz4rO8BHIAy6yxGp0odj4B0GINHD8E7UQFvcbvo4d0QFV5th0LXtUq1fOUzuW9nxMe4jgwegEa4Gavyca1KW1Vpen39jvujGtMRfukNThBLzqe39LuTp1uPX2GvbaHW8P4WyhnnC2etWF7I8qhtr6lWgCjzyRGFLvdpsSrQYuJRGP3rE1YBjuOfiKs6KwYIwZDK2wsZ6BUPmSYERkrn4JYqCy9BPP0AkFjWpJ4FPyX067cmZwsGmNW916JTXpE1dX2SgnuFyNWwuLVM5D7d6wPWtIf1imde9krrsc89gkJ0xTcd625quHHWCsYRUiMzHmLA9QuO3k974Sobk38XBtBw4kU4DsQYFqGLcvjflhJyAdjabW3iPC28YBg1CrOdmlZ5cf8GpuYDUlj9OM71enH28vT4Ddl5LD6CS9SqbtQ81aZXR2nnSOjKqEfmyRvV1wSArQBHKXNMiRAd8dYRCeVGG0BD6ygmdZsi6ygJ0ILxRoWo1QKjZQEWL703FiFrz98V2FfofqqPnYVJpPwg6oTBPiCw9V4hLKkGUYmKfFCvI8lxhFjnUDSIV7U0OnL59bK3yYsgJcIIXKpHFVylM3aaF61I97AhtCDqJr1r2gWRlMgdxjIGmKhqd762r3LjR1YuaDgmAsphRkyoP8ojAYZznFD7Od3E9gSiVgQ6GLoyXBQUE6zPwYWA2is8XT8y7lRMeoWzaGOc3RYN7NmeupIqsYBtWyDgyGtUyVvSsHYYLREDEabPFGHPG446OTLn305tTU63FRBTV0HjyJrM5O8RTlUmDhj5Paew2DMQDqxTKqTZ0b0eFrUH6J1urEmyAZfLmr9JS250K3f9DmXbppo80c3f10jhvn1NgICYldgTGDoV4lNTgEByjE5OeExj7hjp3cFWSprfypNrltUZClxFUqyK68ynHmBG29IuzAiULSVvea4GckOjIfSnHQKsrpmVC7o61j3bgUoXdEJnsQ0Esqj2B7cu4t9c', 0),
-(275, 0, 'config', 'config_compression', '0', 0),
-(276, 0, 'config', 'config_error_display', '1', 0),
-(277, 0, 'config', 'config_error_log', '1', 0),
-(278, 0, 'config', 'config_error_filename', 'error.log', 0),
-(279, 0, 'config', 'config_google_analytics', '', 0),
-(280, 0, 'config', 'config_mail_protocol', 'mail', 0),
-(281, 0, 'config', 'config_mail_parameter', '', 0),
-(282, 0, 'config', 'config_mail_smtp_hostname', '', 0),
-(283, 0, 'config', 'config_mail_smtp_username', '', 0),
-(284, 0, 'config', 'config_mail_smtp_password', '', 0),
-(285, 0, 'config', 'config_mail_smtp_port', '25', 0),
-(286, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
-(287, 0, 'config', 'config_captcha', 'basic_captcha', 0),
-(288, 0, 'config', 'config_captcha_page', '["review","return","contact"]', 1),
-(289, 0, 'config', 'config_login_attempts', '5', 0),
-(291, 0, 'config', 'config_url', 'http://localhost/oc21/upload/', 0);
+(737, 0, 'config', 'config_seo_url', '0', 0),
+(736, 0, 'config', 'config_maintenance', '0', 0),
+(735, 0, 'config', 'config_mail_alert', '', 0),
+(734, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
+(733, 0, 'config', 'config_mail_smtp_port', '25', 0),
+(732, 0, 'config', 'config_mail_smtp_password', '', 0),
+(731, 0, 'config', 'config_mail_smtp_username', '', 0),
+(730, 0, 'config', 'config_mail_smtp_hostname', '', 0),
+(729, 0, 'config', 'config_mail_parameter', '', 0),
+(728, 0, 'config', 'config_mail_protocol', 'mail', 0),
+(727, 0, 'config', 'config_ftp_status', '0', 0),
+(726, 0, 'config', 'config_ftp_root', '', 0),
+(725, 0, 'config', 'config_ftp_password', '', 0),
+(724, 0, 'config', 'config_ftp_username', '', 0),
+(723, 0, 'config', 'config_ftp_port', '21', 0),
+(722, 0, 'config', 'config_ftp_hostname', 'localhost', 0),
+(721, 0, 'config', 'config_image_location_height', '50', 0),
+(720, 0, 'config', 'config_image_location_width', '268', 0),
+(719, 0, 'config', 'config_image_cart_height', '47', 0),
+(718, 0, 'config', 'config_image_cart_width', '47', 0),
+(715, 0, 'config', 'config_image_compare_height', '90', 0),
+(716, 0, 'config', 'config_image_wishlist_width', '47', 0),
+(717, 0, 'config', 'config_image_wishlist_height', '47', 0),
+(714, 0, 'config', 'config_image_compare_width', '90', 0),
+(713, 0, 'config', 'config_image_related_height', '80', 0),
+(712, 0, 'config', 'config_image_related_width', '80', 0),
+(711, 0, 'config', 'config_image_additional_height', '74', 0),
+(710, 0, 'config', 'config_image_additional_width', '74', 0),
+(709, 0, 'config', 'config_image_product_height', '228', 0),
+(708, 0, 'config', 'config_image_product_width', '228', 0),
+(707, 0, 'config', 'config_image_popup_height', '500', 0),
+(706, 0, 'config', 'config_image_popup_width', '500', 0),
+(705, 0, 'config', 'config_image_thumb_height', '228', 0),
+(704, 0, 'config', 'config_image_thumb_width', '228', 0),
+(703, 0, 'config', 'config_image_category_height', '80', 0),
+(702, 0, 'config', 'config_image_category_width', '80', 0),
+(699, 0, 'config', 'config_captcha_page', '["review","return","contact"]', 1),
+(700, 0, 'config', 'config_logo', 'catalog/logo.png', 0),
+(701, 0, 'config', 'config_icon', 'catalog/cart.png', 0),
+(697, 0, 'config', 'config_return_status_id', '2', 0),
+(698, 0, 'config', 'config_captcha', '', 0),
+(696, 0, 'config', 'config_return_id', '0', 0),
+(695, 0, 'config', 'config_affiliate_mail', '0', 0),
+(693, 0, 'config', 'config_affiliate_commission', '5', 0),
+(694, 0, 'config', 'config_affiliate_id', '4', 0),
+(692, 0, 'config', 'config_affiliate_auto', '0', 0),
+(691, 0, 'config', 'config_affiliate_approval', '0', 0),
+(690, 0, 'config', 'config_stock_checkout', '0', 0),
+(689, 0, 'config', 'config_stock_warning', '0', 0),
+(688, 0, 'config', 'config_stock_display', '0', 0),
+(687, 0, 'config', 'config_api_id', '1', 0),
+(686, 0, 'config', 'config_order_mail', '0', 0),
+(685, 0, 'config', 'config_fraud_status_id', '7', 0),
+(684, 0, 'config', 'config_complete_status', '["5","3"]', 1),
+(683, 0, 'config', 'config_processing_status', '["5","1","2","12","3"]', 1),
+(682, 0, 'config', 'config_order_status_id', '1', 0),
+(681, 0, 'config', 'config_checkout_id', '5', 0),
+(680, 0, 'config', 'config_checkout_guest', '1', 0),
+(678, 0, 'config', 'config_invoice_prefix', 'INV-2013-00', 0),
+(679, 0, 'config', 'config_cart_weight', '1', 0),
+(677, 0, 'config', 'config_account_mail', '0', 0),
+(676, 0, 'config', 'config_account_id', '3', 0),
+(674, 0, 'config', 'config_customer_price', '0', 0),
+(675, 0, 'config', 'config_login_attempts', '5', 0),
+(673, 0, 'config', 'config_customer_group_display', '["1"]', 1),
+(672, 0, 'config', 'config_customer_group_id', '1', 0),
+(671, 0, 'config', 'config_customer_online', '0', 0),
+(670, 0, 'config', 'config_tax_customer', 'shipping', 0),
+(669, 0, 'config', 'config_tax_default', 'shipping', 0),
+(668, 0, 'config', 'config_tax', '1', 0),
+(667, 0, 'config', 'config_voucher_max', '1000', 0),
+(666, 0, 'config', 'config_voucher_min', '1', 0),
+(665, 0, 'config', 'config_review_mail', '0', 0),
+(664, 0, 'config', 'config_review_guest', '1', 0),
+(663, 0, 'config', 'config_review_status', '1', 0),
+(662, 0, 'config', 'config_limit_admin', '20', 0),
+(661, 0, 'config', 'config_product_description_length', '100', 0),
+(660, 0, 'config', 'config_product_limit', '15', 0),
+(659, 0, 'config', 'config_product_count', '1', 0),
+(658, 0, 'config', 'config_weight_class_id', '1', 0),
+(657, 0, 'config', 'config_length_class_id', '1', 0),
+(656, 0, 'config', 'config_currency_auto', '1', 0),
+(655, 0, 'config', 'config_currency', 'BDT', 0),
+(654, 0, 'config', 'config_admin_language', 'en', 0),
+(653, 0, 'config', 'config_language', 'en', 0),
+(652, 0, 'config', 'config_zone_id', '322', 0),
+(651, 0, 'config', 'config_country_id', '18', 0),
+(650, 0, 'config', 'config_comment', '', 0),
+(649, 0, 'config', 'config_open', '', 0),
+(648, 0, 'config', 'config_image', '', 0),
+(647, 0, 'config', 'config_fax', '', 0),
+(646, 0, 'config', 'config_telephone', '123456789', 0),
+(645, 0, 'config', 'config_email', 'ausantemonir@gmail.com', 0),
+(644, 0, 'config', 'config_geocode', '', 0),
+(643, 0, 'config', 'config_address', 'Kongkabotee', 0),
+(642, 0, 'config', 'config_owner', 'Kongkabotee', 0),
+(641, 0, 'config', 'config_name', 'Kongkabotee', 0),
+(640, 0, 'config', 'config_layout_id', '4', 0),
+(639, 0, 'config', 'config_template', 'default', 0),
+(638, 0, 'config', 'config_meta_keyword', 'Kongkabotee', 0),
+(637, 0, 'config', 'config_meta_description', 'Kongkabotee', 0),
+(636, 0, 'config', 'config_meta_title', 'Kongkabotee', 0);
 
 -- --------------------------------------------------------
 
@@ -8572,7 +8573,7 @@ ALTER TABLE `oc_coupon_product`
 -- AUTO_INCREMENT for table `oc_currency`
 --
 ALTER TABLE `oc_currency`
-  MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `oc_customer`
 --
@@ -8672,12 +8673,12 @@ ALTER TABLE `oc_layout`
 -- AUTO_INCREMENT for table `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
-  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
+  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
 --
 -- AUTO_INCREMENT for table `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
-  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 --
 -- AUTO_INCREMENT for table `oc_length_class`
 --
@@ -8712,7 +8713,7 @@ ALTER TABLE `oc_modification`
 -- AUTO_INCREMENT for table `oc_module`
 --
 ALTER TABLE `oc_module`
-  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- AUTO_INCREMENT for table `oc_option`
 --
@@ -8847,7 +8848,7 @@ ALTER TABLE `oc_review`
 -- AUTO_INCREMENT for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
-  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=294;
+  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=750;
 --
 -- AUTO_INCREMENT for table `oc_stock_status`
 --
