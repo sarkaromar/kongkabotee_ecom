@@ -10,7 +10,7 @@
     padding-right: 10px !important;
 }
 #search {
-    width: 50% !important;
+    width: 150px !important;
 }
 /* #search:hover, #search:focus {
     width: 100% !important;
@@ -124,15 +124,10 @@ h2 {
 
   background: #000000;
 }
-.owl-carousel .owl-buttons .owl-next {
-    right: -70px !important;
-}
-.owl-carousel .owl-buttons .owl-prev {
-    left: -70px !important;
-}
 
 .wsw {
     text-align: center;
+    padding: 25px;
 }
 .wsw .fa {
     font-size: 90px;
@@ -146,3 +141,38 @@ h2 {
 .bdr-r {
     border-right: 1px solid #ddd;
 }
+button.btn.btn-nav.navbar-toggle {
+    padding: 5px 20px;
+    background: #e7e7e7;
+}
+button.currency-select.btn.btn-link.btn-block {
+    color: #333 !important;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 14px !important;
+    }
+    .opt-caption {
+        position: absolute;
+        z-index: 2;
+        left: 65px;
+        top: 30px;
+        border: 1px solid #999;
+        padding: 5px 20px;
+    }
+    .owl-carousel {
+        margin: 15px 0 20px !important;
+    }
+    #search {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    .backs{
+        background: #fff !important;
+    }
+    img {
+        margin-bottom: 10px;
+    }
+}
+
