@@ -6,16 +6,18 @@
     <div class="list-group-item">
       <div id="filter-group<?php echo $filter_group['filter_group_id']; ?>">
         <?php foreach ($filter_group['filter'] as $filter) { ?>
-        <div class="checkbox">
-          <label>
+        <div class="checkbox squaredTwo">
+
             <?php if (in_array($filter['filter_id'], $filter_category)) { ?>
-            <input type="checkbox" name="filter[]" value="<?php echo $filter['filter_id']; ?>" checked="checked" />
-            <?php echo $filter['name']; ?>
+            <input type="checkbox" class="" id="<?php echo $filter['filter_id']; ?>" name="filter[]" value="<?php echo $filter['filter_id']; ?>" checked="checked" />
+            <label for="<?php echo $filter['filter_id']; ?>"></label>
+            <span><?php echo $filter['name']; ?></span>
             <?php } else { ?>
-            <input type="checkbox" name="filter[]" value="<?php echo $filter['filter_id']; ?>" />
-            <?php echo $filter['name']; ?>
+            <input type="checkbox"  class="" id="<?php echo $filter['filter_id']; ?>" name="filter[]" value="<?php echo $filter['filter_id']; ?>" />
+            <label for="<?php echo $filter['filter_id']; ?>"></label>
+            <span><?php echo $filter['name']; ?></span>
             <?php } ?>
-          </label>
+
         </div>
         <?php } ?>
       </div>

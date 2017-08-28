@@ -1,3 +1,39 @@
+<section>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="social-icons">
+              <li><h4 class="s-lvl">Follow us on</h4></li>
+              <li class="social-icons-facebook">
+                  <a href="#" target="_blank" title="Facebook">
+                      <i class="fa fa-facebook"></i>
+                  </a>
+              </li>
+              <li class="social-icons-twitter">
+                  <a href="#" target="_blank" title="Twitter">
+                      <i class="fa fa-twitter"></i>
+                  </a>
+              </li>
+              <li class="social-icons-yt">
+                  <a href="#" target="_blank" title="Linkedin">
+                      <i class="fa fa-youtube" aria-hidden="true"></i>
+                  </a>
+              </li>
+              <li class="social-icons-gp">
+                  <a href="#" target="_blank" title="Linkedin">
+                      <i class="fa fa-google-plus" aria-hidden="true"></i>
+                  </a>
+              </li>
+          </ul>
+        </div>
+          <div class="col-md-6">
+            
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
 <footer>
   <div class="container">
     <div class="row">
